@@ -251,7 +251,6 @@ nav {
 }
 
 .about__me {
-    width: 500px;
     margin: 0 5em 0 0;
 
     @include mobile($tablet) {
@@ -300,9 +299,6 @@ nav {
         align-items: center;
         @include mobile($tablet) {
             width: 100%;
-        }
-        @include mobile(510px) {
-            width: 90%;
         }
     }
 }

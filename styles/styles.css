@@ -236,7 +236,6 @@ nav .switchDark.active::after {
 }
 
 .about__me {
-  width: 500px;
   margin: 0 5em 0 0;
 }
 @media screen and (max-width: 768px) {
@@ -293,11 +292,6 @@ nav .switchDark.active::after {
 @media screen and (max-width: 768px) {
   .card .card__items {
     width: 100%;
-  }
-}
-@media screen and (max-width: 510px) {
-  .card .card__items {
-    width: 90%;
   }
 }
 
