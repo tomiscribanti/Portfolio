@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Thomas</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="blur"></div>
+    <header>
+        <nav id="navbar">
+            <div class="container">
+                    <h1>Tomiscribanti</h1>
+                    <ul class="nav" id="nav-menu">
+                        <div class="icon cancel-btn">
+                            <i class="fas fa-times"></i>
+                        </div>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Proyects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><img src="img/moon.png" id="icon" class="iconChange" alt="moon"></li>
+                    </ul>
+                    <div class="icon menu-btn">
+                        <i class="fas fa-bars"></i>
+                    </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero__img">
+            <img src="img/me.jpeg" alt="Foto personal">
+        </div>
+        <div class="hero__who">
+            <h2>Hello!</h2>
+            <p>Im Thomas Escribanti.</p>
+            <p>Im a <span class="type"></span></p>
+        </div>
+    </section>
+
+    <main>
+        <section id="about">
+            <div class="container">
+                <h2 class="about__title">About</h2>
+                <div class="wrapper__about">
+                    <div class="about__me">
+                        <p>Who am i?</p>
+                        <h3>Im a tech passionate and Web Developer</h3>
+                        <p>I am a freelancer based in Buenos Aires,Argentina and i have been building noteworthy
+                            websites for the last year,
+                            which comply with the latest design trends.
+                            I help convert a vision and an idea into meaningful and useful products.
+                        </p>
+                        <div>
+                            <a href="assets/thomas__Cv.pdf" target="_blank"><i class="fas fa-file-download"></i>
+                                Download CV</a>
+                        </div>
+                    </div>
+                    <div class="about_skills">
+                        <p>My skills:</p>
+                        <div class="card">
+                            <div class="card__items">
+                                <i class="fab fa-html5" aria-hidden="true"></i>
+                                <p>HTML</p>
+                            </div>
+                            <div class="card__items">
+                                <i class="fab fa-css3-alt"></i>
+                                <p>CSS</p>
+                            </div>
+                            <div class="card__items">
+                                <i class="fab fa-js"></i>
+                                <p>JavaScript</p>
+                            </div>
+                            <div class="card__items">
+                                <i class="fab fa-bootstrap"></i>
+                                <p>Bootstrap</p>
+                            </div>
+                            <div class="card__items">
+                                <i class="fab fa-sass"></i>
+                                <p>Sass</p>
+                            </div>
+                            <div class="card__items">
+                                <i class="fab fa-figma"></i>
+                                <p>Figma</p>
+                            </div>
+                            <div class="card__items">
+                                <i class="fab fa-php"></i>
+                                <p>Php</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services">
+            <div class="container">
+                <div class="container__services">
+                    <h2 class="about__title">Services</h2>
+                    <p class="text__section">Services i offer to my clients</p>
+                    <div class="cards__services">
+                        <div class="card__services">
+                            <i class="fas fa-code"></i>
+                            <h3>Development</h3>
+                            <p>I know the importance of web design and can help you create a website you’ll love.</p>
+                        </div>
+                        <div class="card__services">
+                            <i class="fas fa-pencil-ruler"></i>
+                            <h3>Creative Design</h3>
+                            <p>A good and attractive web design helps you keep your leads on your site, which is the
+                                digital face of your business.</p>
+                        </div>
+                        <div class="card__services">
+                            <i class="fas fa-mobile-alt"></i>
+                            <h3>Fully Responsive</h3>
+                            <p>Your site will display properly on any device, including desktop computers, tablets and
+                                mobile phones.</p>
+                        </div>
+                        <div class="card__services">
+                            <i class="fas fa-tachometer-alt"></i>
+                            <h3>Performance</h3>
+                            <p>Retaining users is crucial to improving conversions. High-performing sites engage and
+                                retain users.</p>
+                        </div>
+                        <div class="card__services">
+                            <i class="fas fa-thumbs-up"></i>
+                            <h3>Social Media Integration</h3>
+                            <p>There are a lot of social platforms out there, and you should promote your presence on
+                                them on your website</p>
+                        </div>
+                        <div class="card__services">
+                            <i class="fas fa-crosshairs"></i>
+                            <h3>SEO</h3>
+                            <p>I will optimize your site with intelligent Search Engine Optimization strategy to
+                                generate leads.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio">
+            <div class="container">
+                <h2 class="about__title">Portfolio</h2>
+                <p class="text__section">Showcasing some of my best work</p>
+                <div class="portfolio__container">
+                    <div class="portfolio__card">
+                        <img class="portfolio__img" src="img/pokedex.png" alt="pokedex">
+                        <div class="portfolio__content">
+                            <h3>Pokedex</h3>
+                            <ul>
+                                <li><i class="fab fa-html5"></i>HTML</li>
+                                <li><i class="fab fa-css3-alt"></i>CSS</li>
+                                <li><i class="fab fa-js"></i>JavaScript</li>
+                            </ul>
+                            <div class="portfolio__link">
+                                <a class="button" href="https://tomiscribanti.github.io/pokedex/" target="_blank"><i
+                                        class="fas fa-globe-americas"></i> Website</a>
+                                <a class="button" href="https://github.com/tomiscribanti/pokedex" target="_blank"><i
+                                        class="fab fa-github"></i> Repositore</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio__card">
+                        <img class="portfolio__img" src="img/lahogareña.png" alt="sitio web la hogareña">
+                        <div class="portfolio__content">
+                            <h3>La hogareña</h3>
+                            <ul>
+                                <li><i class="fab fa-html5"></i>HTML</li>
+                                <li><i class="fab fa-css3-alt"></i>CSS</li>
+                                <li><i class="fab fa-js"></i>JavaScript</li>
+                                <li><i class="fab fa-php"></i>Php</li>
+                            </ul>
+                            <div class="portfolio__link">
+                                <a class="button" href="https://tomiscribanti.github.io/La-hogarena-website/"
+                                    target="_blank"><i class="fas fa-globe-americas"></i> Website</a>
+                                <a class="button" href="https://github.com/tomiscribanti/La-hogarena-website"
+                                    target="_blank"><i class="fab fa-github"></i> Repositore</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio__card">
+                        <img class="portfolio__img" src="img/lista.png" alt="Lista de tareas">
+                        <div class="portfolio__content">
+                            <h3>Lista de tareas</h3>
+                            <ul>
+                                <li><i class="fab fa-html5"></i>HTML</li>
+                                <li><i class="fab fa-css3-alt"></i>CSS</li>
+                                <li><i class="fab fa-js"></i>JavaScript</li>
+                            </ul>
+                            <div class="portfolio__link">
+                                <a class="button" href="https://tomiscribanti.github.io/To-do-List/" target="_blank"><i
+                                        class="fas fa-globe-americas"></i> Website</a>
+                                <a class="button" href="https://github.com/tomiscribanti/To-do-List" target="_blank"><i
+                                        class="fab fa-github"></i> Repositore</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio__card">
+                        <img class="portfolio__img" src="img/gifs.png" alt="Buscador de gifs">
+                        <div class="portfolio__content">
+                            <h3>Pokedex</h3>
+                            <ul>
+                                <li><i class="fab fa-html5"></i>HTML</li>
+                                <li><i class="fab fa-css3-alt"></i>CSS</li>
+                                <li><i class="fab fa-js"></i>JavaScript</li>
+                            </ul>
+                            <div class="portfolio__link">
+                                <a class="button" href="https://tomiscribanti.github.io/GIFS-searcher/"
+                                    target="_blank"><i class="fas fa-globe-americas"></i> Website</a>
+                                <a class="button" href="https://github.com/tomiscribanti/GIFS-searcher"
+                                    target="_blank"><i class="fab fa-github"></i> Repositore</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio__card">
+                        <img class="portfolio__img" src="img/lp.png" alt="Landing Page">
+                        <div class="portfolio__content">
+                            <h3>Pokedex</h3>
+                            <ul>
+                                <li><i class="fab fa-html5"></i>HTML</li>
+                                <li><i class="fab fa-css3-alt"></i>CSS</li>
+                                <li><i class="fab fa-js"></i>JavaScript</li>
+                            </ul>
+                            <div class="portfolio__link">
+                                <a class="button" href="https://tomiscribanti.github.io/Landing-Page/"
+                                    target="_blank"><i class="fas fa-globe-americas"></i> Website</a>
+                                <a class="button" href="https://github.com/tomiscribanti/Landing-Page"
+                                    target="_blank"><i class="fab fa-github"></i> Repositore</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio__card">
+                        <img class="portfolio__img" src="img/raiting.png" alt="website raiting">
+                        <div class="portfolio__content">
+                            <h3>Raiting</h3>
+                            <ul>
+                                <li><i class="fab fa-html5"></i>HTML</li>
+                                <li><i class="fab fa-css3-alt"></i>CSS</li>
+                                <li><i class="fab fa-js"></i>JavaScript</li>
+                            </ul>
+                            <div class="portfolio__link">
+                                <a class="button" href="https://tomiscribanti.github.io/Raiting/" target="_blank"><i
+                                        class="fas fa-globe-americas"></i> Website</a>
+                                <a class="button" href="https://github.com/tomiscribanti/Raiting" target="_blank"><i
+                                        class="fab fa-github"></i> Repositore</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio__card">
+                        <img class="portfolio__img" src="img/tesla.png" alt="Website tesla">
+                        <div class="portfolio__content">
+                            <h3>Tesla</h3>
+                            <ul>
+                                <li><i class="fab fa-html5"></i>HTML</li>
+                                <li><i class="fab fa-css3-alt"></i>CSS</li>
+                                <li><i class="fab fa-js"></i>JavaScript</li>
+                                <li><i class="fab fa-sass"></i>Sass</li>
+                            </ul>
+                            <div class="portfolio__link">
+                                <a class="button" href="https://tomiscribanti.github.io/Tesla-Clon/" target="_blank"><i
+                                        class="fas fa-globe-americas"></i> Website</a>
+                                <a class="button" href="https://github.com/tomiscribanti/Tesla-Clon" target="_blank"><i
+                                        class="fab fa-github"></i> Repositore</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <div class="container">
+                <h2 class="about__title">Contact</h2>
+                <p class="text__section">Always available for freelance work if the right project comes along.
+                    <span>Feel free to contact me!</span></p>
+                <div class="contact__container">
+                    <div class="contact__items">
+                        <a href="mailto:escribantithomas9@gmail.com">
+                            <i class="fas fa-paper-plane"></i>
+                            <p>Mail Me</p>
+                        </a>
+                    </div>
+                    <div class="contact__items">
+                        <a href="https://github.com/tomiscribanti" target="_blank">
+                            <i class="fab fa-github"></i>
+                            <p>Follow Me</p>
+                        </a>
+                    </div>
+                    <!--
+                        <div class="contact__items">
+                        <a href="https://twitter.com/thom1escribanti" target="_blank">
+                            <i class="fab fa-twitter"></i>
+                            <p>Follow Me</p>
+                        </a>
+                    </div>
+                    -->
+                    <div class="contact__items">
+                        <a href="https://www.linkedin.com/in/thomas-escribanti-8b6a71235/" target="_blank">
+                            <i class="fab fa-linkedin-in"></i>
+                            <p>Contact Me</p>
+                        </a>
+                    </div>
+                    <div class="contact__items">
+                        <a href="https://api.whatsapp.com/send?phone=+54 9 11 38325305" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                            <p>Contact Me</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container__footer">
+            <p>Copyright &copy; 2022. Thomas Escribanti</p>
+            <p>All rights Reserved</p>
+        </div>
+    </footer>
+
+    <script src="main/typed.js"></script>
+    <script src="main/script.js"></script>
+</body>
+
+</html>
