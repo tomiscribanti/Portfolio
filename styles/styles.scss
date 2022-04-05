@@ -201,7 +201,6 @@ nav {
     .hero__img {
         width: 22%;
         height: 43%;
-
         @include mobile($notebook) {
             width: 25%;
             height: 35%;
@@ -217,6 +216,7 @@ nav {
         border-radius: 50%;
         width: 100%;
         height: 100%;
+        object-fit: cover;
     }
 
     .hero__who {
