@@ -2,6 +2,31 @@ const menu = document.getElementById('nav-menu');
 const menuBtn = document.querySelector('.menu-btn');
 const closeBtn = document.querySelector('.cancel-btn');
 const menuLinks = document.querySelectorAll('#nav-menu a[href^="#"]');
+const sections = document.querySelectorAll('section');
+const navList = document.querySelectorAll('.nav a');
+
+const options = {
+    threshold: "0.6",
+};
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((e) => {
+        if (e.isIntersecting) {
+         navList.forEach((link) => {
+                if (e.target.id === link.dataset.nav) {
+                    link.classList.add('selected');
+                } else {
+                    link.classList.remove('selected');
+
+                }
+            })
+        }
+    });
+}, options);
+
+sections.forEach((section) => {
+    observer.observe(section);
+});
 
 menuLinks.forEach(menuLink => {
     menuLink.addEventListener('click', function() {

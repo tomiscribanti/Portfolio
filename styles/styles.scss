@@ -44,10 +44,6 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-.selected:hover {
-    color: var(--principal);
-}
-
 nav.scroll {
     background-color: rgba(0, 0, 0, .9);
     padding: 16px 0;
@@ -88,7 +84,12 @@ nav.scroll {
     right: 23px;
     top: 17px;
 }
-
+.nav a.selected {
+    color: var(--graybg);
+}
+.nav a:hover {
+    color: var(--principal);
+}
 nav {
     display: flex;
     justify-content: space-between;
@@ -121,6 +122,7 @@ nav {
         text-decoration: none;
         margin: .8em;
         color: var(--graytext);
+        transition: .5s;
     }
 
     button {
