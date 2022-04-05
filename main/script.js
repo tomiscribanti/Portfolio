@@ -87,4 +87,56 @@ var typed = new Typed('.type', {
     typeSpeed: 100,
     backSpeed: 70,
     loop: true,
-  });
+});
+
+window.sr = ScrollReveal();
+
+sr.reveal('.about__title', {
+    duration: 2000,
+    origin: 'bottom'
+});
+
+sr.reveal('.about__me', {
+    duration: 1000,
+    origin: 'bottom',
+    delay: '500',
+    mobile: true
+});
+
+sr.reveal('.about_skills', {
+    duration: 1000,
+    origin: 'bottom',
+    delay: '500',
+    mobile: true
+});
+
+
+
+sr.reveal('.text__section', {
+    duration: 1000,
+    origin: 'bottom',
+    delay: '500',
+    mobile: true
+});
+
+sr.reveal('.cards__services', {
+    duration: 1000,
+    origin: 'bottom',
+    delay: '500',
+    mobile: true
+});
+
+
+sr.reveal('.portfolio__container', {
+    duration: 1000,
+    origin: 'bottom',
+    delay: '500',
+    mobile: true
+});
+
+sr.reveal('.contact__container', {
+    duration: 1000,
+    origin: 'bottom',
+    delay: '500',
+    mobile: true
+}); 
