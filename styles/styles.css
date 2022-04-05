@@ -87,6 +87,11 @@ nav.scroll {
 .nav a.selected {
   color: var(--graybg);
 }
+@media screen and (max-width: 768px) {
+  .nav a.selected {
+    color: var(--graytext);
+  }
+}
 
 .nav a:hover {
   color: var(--principal);

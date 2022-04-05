@@ -86,6 +86,9 @@ nav.scroll {
 }
 .nav a.selected {
     color: var(--graybg);
+    @include mobile($tablet) {
+        color: var(--graytext);
+    }
 }
 .nav a:hover {
     color: var(--principal);
