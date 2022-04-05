@@ -1,8 +1,13 @@
-const navBarMenu = document.getElementById('navbar');
 const menu = document.getElementById('nav-menu');
 const menuBtn = document.querySelector('.menu-btn');
 const closeBtn = document.querySelector('.cancel-btn');
-const blurEffect = document.querySelector('.blur');
+const menuLinks = document.querySelectorAll('#nav-menu a[href^="#"]');
+
+menuLinks.forEach(menuLink => {
+    menuLink.addEventListener('click', function() {
+        menu.classList.remove('active');
+    })
+})
 
 menuBtn.addEventListener('click', function() {
     menu.classList.add('active');

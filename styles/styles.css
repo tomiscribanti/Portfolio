@@ -4,6 +4,12 @@
   box-sizing: border-box;
 }
 
+.disclaimer {
+  display: none;
+  opacity: 0;
+  pointer-events: none;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -38,24 +44,7 @@ body {
 nav.scroll {
   background-color: rgba(0, 0, 0, 0.9);
   padding: 16px 0;
-  z-index: 2;
-}
-
-.blur {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(1rem);
   z-index: 5;
-  display: none;
-  transition: 0.2s;
-}
-
-.blur.show {
-  display: block;
 }
 
 @media screen and (max-width: 768px) {
@@ -64,7 +53,7 @@ nav.scroll {
     top: 0;
     right: -100%;
     height: 100vh;
-    width: 55%;
+    width: 52%;
     background-color: var(--bggray);
     flex-direction: column;
     padding: 40px 0;
@@ -191,13 +180,18 @@ nav .switchDark.active::after {
     flex-direction: column;
   }
 }
+@media screen and (max-width: 1400px) {
+  .hero {
+    flex-direction: column;
+  }
+}
 .hero .hero__img {
   width: 22%;
   height: 43%;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1400px) {
   .hero .hero__img {
-    width: 49%;
+    width: 25%;
     height: 35%;
   }
 }
@@ -236,7 +230,7 @@ nav .switchDark.active::after {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 20px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1400px) {
   .wrapper__about {
     grid-template-columns: 1fr;
   }
@@ -244,9 +238,11 @@ nav .switchDark.active::after {
 
 .about__me {
   margin: 0 5em 0 0;
+  width: 500px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1400px) {
   .about__me {
+    width: 100%;
     margin: 0;
     text-align: left;
   }
@@ -273,10 +269,10 @@ nav .switchDark.active::after {
 
 .card {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 768px) {
   .card {
     grid-template-columns: 1fr 1fr;
   }
@@ -296,7 +292,7 @@ nav .switchDark.active::after {
   flex-direction: column;
   align-items: center;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1400px) {
   .card .card__items {
     width: 100%;
   }
@@ -367,13 +363,13 @@ nav .switchDark.active::after {
   grid-template-columns: 1fr 1fr 1fr;
   gap: 40px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1400px) {
   .cards__services {
     grid-template-columns: 1fr 1fr;
     gap: 20px;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 576px) {
   .cards__services {
     grid-template-columns: 1fr;
     gap: 20px;
@@ -421,8 +417,8 @@ h3 {
 
 .portfolio__container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 40px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
 }
 @media screen and (max-width: 768px) {
   .portfolio__container {
@@ -445,8 +441,8 @@ h3 {
 }
 
 .portfolio__card {
-  width: 400px;
-  height: 220px;
+  width: 100%;
+  height: 197px;
   position: relative;
   overflow: hidden;
 }
@@ -454,13 +450,12 @@ h3 {
   .portfolio__card {
     margin: auto;
     width: 100%;
-    height: auto;
   }
 }
 
 .portfolio__content {
   position: absolute;
-  padding: 35px;
+  padding: 15px;
   background-color: rgba(0, 0, 0, 0.7);
   width: 100%;
   height: 100%;
@@ -471,6 +466,11 @@ h3 {
   z-index: 2;
   transition: all 0.5s;
   text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .portfolio__content {
+    padding: 10px;
+  }
 }
 
 .portfolio__card:hover .portfolio__content {
@@ -518,6 +518,11 @@ h3 {
   align-items: center;
   margin: 10px;
 }
+@media screen and (max-width: 768px) {
+  .portfolio__content ul li {
+    display: inline;
+  }
+}
 
 .portfolio__link {
   display: flex;
@@ -556,16 +561,16 @@ h3 {
 
 .contact__container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 40px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1400px) {
   .contact__container {
     grid-template-columns: 1fr 1fr;
     gap: 20px;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .contact__container {
     grid-template-columns: 1fr;
     gap: 20px;
@@ -577,15 +582,14 @@ h3 {
   justify-content: center;
   align-items: center;
   background-color: var(--bggray);
-  width: 290px;
+  width: 100%;
   height: 220px;
   text-align: center;
-  margin-bottom: 3em;
 }
 @media screen and (max-width: 768px) {
   .contact__items {
     width: 100%;
-    height: 100%;
+    height: 220px;
   }
 }
 
@@ -632,6 +636,10 @@ h3 {
   height: 30px;
   cursor: pointer;
   transition: all 0.5s;
+}
+
+#contact {
+  margin-bottom: 2em;
 }
 
 /* Light Mode */
