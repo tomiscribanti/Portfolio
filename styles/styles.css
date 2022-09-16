@@ -514,7 +514,7 @@ h3 {
 }
 
 .portfolio__card h3 {
-  color: var(--principal);
+  color: var(--graybg);
   font-size: 1.5em;
   margin: 5px;
 }
@@ -529,7 +529,7 @@ h3 {
   color: var(--graybg);
   display: flex;
   align-items: center;
-  margin: 10px;
+  margin: 6px;
 }
 @media screen and (max-width: 768px) {
   .portfolio__content ul li {
