@@ -574,7 +574,7 @@ h3 {
 
 .contact__container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 40px;
 }
 @media screen and (max-width: 1400px) {
@@ -731,5 +731,3 @@ body.blight {
 .blight .about__me a:hover {
   background-color: #4d2db6;
 }
-
-/*# sourceMappingURL=styles.css.map */
