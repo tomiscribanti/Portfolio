@@ -83,7 +83,7 @@ window.addEventListener('scroll', (e) => {
 });
 
 var typed = new Typed('.type', {
-    strings: ['Frontend', 'Designer'],
+    strings: ['Desarrollador web', 'Diseñador'],
     typeSpeed: 100,
     backSpeed: 70,
     loop: true,
